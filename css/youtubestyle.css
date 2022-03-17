@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*1*/
+.movie-content-wrap01 {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.movie-content-wrap01 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.movie-content-wrap01 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.sp-spacer01 {
+	display: none;
+	width: 1px;
+	height: 1px;
+}
+

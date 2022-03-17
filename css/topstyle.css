@@ -1,0 +1,1079 @@
+@charset 'utf-8';
+
+/* cssリンク ↓ */
+/* すべてのサイトにおける設定 */
+/* 全ページ共通 */
+/* TOPページ */
+/* 馬のふれあいページ */
+
+
+
+/*/////////////////すべてのサイトにおける設定ここから/////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/PC_bgbase.png")!important;
+}
+
+body {
+	font-family: "游ゴシック体", YuGothic,"Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
+	font-feature-settings: "palt" 1;
+	}
+
+li {
+  list-style-type: none;
+}
+
+img {
+	width:100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*レスポンシブ*/
+.forSp {
+		display: none;
+}
+
+.forPc {
+		display: block;
+}
+@media screen and (max-width: 900px){
+.forSp {
+		display: block;
+}
+	
+.forPc {
+		display: none;
+}
+}
+
+
+/*フォントサイズ*/
+body {
+font-size:1vw;
+}
+@media screen and (max-width: 900px){
+body {
+font-size:3.5vw;
+}
+}
+
+/*/////////////////すべてのサイトにおける設定ここまで/////////////////*/
+
+
+
+
+
+/*/////////////////全ページ共通 ここから////////////////*/
+
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #fed000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+.loaduma {
+	width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.loadingtxt {
+    text-align: center;
+    padding-top: 25vw;
+    color: #fff;
+    font-size: 2vw;
+}
+
+
+
+.spinner {
+  /*width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;*/
+	width: 150px;
+    height: 150px;
+    margin: 191px auto;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+    position: absolute;
+    left: 43%;
+    top: 20%;
+    z-index: -1;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 900px){
+
+.loaduma {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.spinner {
+	left: 31%;
+    top: 4%;
+	}
+.loadingtxt {
+    padding-top: 55vw;
+    font-size: 5vw;
+}
+}
+
+
+/*header {
+	background: repeat-x url("../img/headfootbg.jpg");
+	background-position: left 0% top 0%;
+	background-size: 2%;
+	position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.headerlogo {
+	display: inline-block;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 0 0 100% 0;
+    background: #28284f;
+}
+.headerlogo img {
+	position: absolute;
+    width: 5%;
+    top: 2.3vw;
+    left: 1vw;
+}
+
+
+.wrapper {
+	background: repeat-x url("../img/headfootbg.jpg");
+	background-position: left 0% bottom 0%;
+	background-size: 2%;
+}
+
+footer {
+	padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+.copyright {
+	text-align: center;
+    font-size: 1vw;
+    color: #fff;
+}*/
+header {
+	position: relative;
+	}
+
+h1 {
+	position: absolute;
+	width: 10%;
+	top: 0;
+	left: 0;
+	}
+.wrappercon {
+	width: 100%;
+	  max-width: 100%;
+	  overflow-x: hidden;
+
+}
+footer {
+	margin-top: -5%;
+    position: relative;
+    z-index: 1000;
+	color: #000;
+	}
+
+footer img {
+	vertical-align:top;
+	}
+
+.copyright {
+	text-align: center;
+    color: #000;
+    margin-bottom: 1.5%;
+    letter-spacing: 0.1vw;
+    font-size: 0.7vw;
+	/*font-weight: bold;*/
+	}
+
+@media screen and (max-width: 900px){
+h1 {
+    width: 23%;
+	}	
+	
+.copyright {
+	font-size: 2.8vw;
+	}
+}
+
+
+/*/////////////////全ページ共通 ここまで////////////////*/
+
+
+
+
+
+/*/////////////////TOPページ ここから////////////////*/
+
+body.top {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+.topcon01 {
+	width: 70%;
+    margin: 0 auto;
+	padding-top: 4vw;
+}
+.toptit {
+	width: 80%;
+    margin: 0 auto;
+}
+
+.mainbisobjct {
+	position: relative;
+}
+.menu_objct {
+}
+
+.menu_objct01 {
+	width: 58%;
+	position: absolute;
+    top: 7vw;
+    left: -5vw;}
+
+
+.menu_objct01 a {
+	display: block;
+}
+.menu_objct01 a:hover {
+    transition: 0.3s;
+    /* width: 65%; */
+    transform: scale(1.15);
+}
+.menu_objct02 a {
+	display: block;
+}
+.menu_objct02 a:hover {
+    transition: 0.3s;
+    /* width: 65%; */
+    transform: scale(1.15);
+}
+.menu_objct03 a {
+	display: block;
+}
+.menu_objct03 a:hover {
+    transition: 0.3s;
+    /* width: 65%; */
+    transform: scale(1.15);
+}
+.menu_objct04 a {
+	display: block;
+}
+.menu_objct04 a:hover {
+    transition: 0.3s;
+    /* width: 65%; */
+    transform: scale(1.15);
+}
+
+
+
+
+
+.displaynone {
+	display: none;
+	transition: 0.3s;
+}
+
+
+.menu_objct02 {
+	position: absolute;
+	width: 79%;
+    top: 16vw;
+    left: 8vw;
+}
+.menu_objct03 {
+	position: absolute;
+	width: 20%;
+    top: 5vw;
+    left: 33vw;
+}
+.menu_objct04 {
+	position: absolute;
+	width: 28%;
+    top: -1vw;
+    right: 6vw;
+}
+.menu_objct05 {
+	position: absolute;
+	width: 13%;
+    top: 8vw;
+    right: 0vw;
+}
+.deco_flag {
+	position: absolute;
+    width: 46%;
+    top: 34vw;
+    left: 28vw;
+}
+
+
+.obj_midashi {
+    position: absolute;
+    bottom: 1vw;
+    left: 5vw;
+    transition: 0.3s;
+    /*border: solid 0.3vw #004a26;
+    border-radius: 4vw;
+    box-sizing: border-box;
+    color: #004a26;
+	font-weight: bold;
+	background: #ffffff;
+    width: 40%;
+    line-height: 2.5vw;
+    text-align: center;*/
+
+}
+/*.menu_objct02 .obj_midashi {
+    bottom: 2vw;
+    left: 14vw;
+	border: solid 0.3vw #28284f;
+    color: #28284f;
+}
+.menu_objct03 .obj_midashi {
+    width: 100%;
+    bottom: 6vw;
+    left: 0vw;
+    border: solid 0.3vw #f15a23;
+    color: #f15a23;
+}
+.menu_objct04 .obj_midashi {
+    width: 63%;
+    bottom: 2vw;
+    left: 4vw;
+    border: solid 0.3vw #c63129;
+    color: #c63129;
+}*/
+
+
+.balloon01 {
+	position: absolute;
+    width: 6%;
+    left: 14vw;
+    top: 26vw;
+    z-index: 0;
+}
+.balloon02 {
+	position: absolute;
+    width: 2%;
+    left: 32vw;
+    top: 24vw;
+    z-index: -1;
+}
+.balloon03 {
+	position: absolute;
+    width: 1.7%;
+    left: 40vw;
+    top: 25vw;
+    z-index: -1;
+
+}
+.balloon04 {
+	position: absolute;
+    width: 1.7%;
+    right: 53vw;
+    top: 23vw;
+    z-index: -1;
+}
+.balloon05 {
+	position: absolute;
+    width: 1.3%;
+    right: 37vw;
+    top: 26vw;
+    z-index: -1;
+}
+.balloon06 {
+	position: absolute;
+    width: 5%;
+    right: 14vw;
+    top: 25vw;
+    z-index: -1;
+}
+
+.topcon01bg02 {
+	width: 100%;
+	height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: -14vw;
+    left: 0;
+    z-index: -2;
+}
+
+
+
+/*コンテンツ2*/
+.topcon02 {
+	width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1vw;
+    padding-bottom: 10vw;
+
+}
+.topcon02 ul {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+    flex-wrap: wrap;
+}
+.topcon02 ul li {
+	width: 33%;
+}
+
+
+.topcon02bg {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+@media screen and (max-width: 900px){
+.topcon01 {
+    width: 100%;
+    padding-top: 16vw;
+}
+.toptit {
+    width: 90%;
+}
+.topcon01bg02 {
+    top: 10vw;
+}
+.round {
+    width: 120%;
+    margin-left: -10vw;
+    animation: 90s linear infinite rotation1;
+}
+	
+	
+	
+.deco_flag {
+    width: 69%;
+    top: 91vw;
+    left: 16vw;
+}
+	
+.menu_objct01 {
+    width: 69%;
+    top: 29vw;
+    left: 3vw;
+}
+.menu_objct02 {
+    width: 92%;
+    top: 48vw;
+    left: 4vw;
+}
+.menu_objct03 {
+    width: 28%;
+    top: 13vw;
+    left: 31vw;
+}
+.menu_objct04 {
+    width: 34%;
+    top: 3vw;
+    right: 8vw;
+}
+.menu_objct05 {
+    width: 17%;
+    top: 28vw;
+    right: 3vw;
+}
+	
+	
+	
+/*飾りパーツ*/
+.balloon01 {
+    width: 11%;
+    left: 8vw;
+    top: 69vw;
+}
+.balloon02 {
+    width: 4%;
+    left: 21vw;
+    top: 54vw;
+}
+.balloon03 {
+    width: 3%;
+    left: 13vw;
+    top: 60vw;
+}
+.balloon04 {
+    width: 3.7%;
+    right: 37vw;
+    top: 52vw;
+}
+.balloon05 {
+    width: 3.7%;
+    right: 30vw;
+    top: 57vw;
+}
+.balloon06 {
+    width: 9%;
+    right: 6vw;
+    top: 57vw;
+}
+
+
+/*コンテンつ2*/
+.topcon02 {
+	margin-top: -75vw;
+}
+.topcon02 ul {
+    width: 70%;
+    margin: 0 auto;
+    margin-left: 17%;
+    display: block;
+    /* flex-wrap: wrap; */
+}
+.topcon02 ul li {
+    width: 100%;
+	margin-top: -5vw;
+}
+}
+
+
+
+
+
+
+
+
+/*アニメーション*/
+/*馬走る*/
+/*.uma01 {
+	position: absolute;
+    z-index: 10;
+    width: 10%;
+    right: 0;
+    bottom: 0;
+}*/
+.umaanime {
+	width: 100%;
+    height: 40vw;
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    overflow-x: hidden;
+    /* z-index: 1000;*/
+}
+
+
+.uma01 {
+    transform: rotate(-10deg);
+    width: 12%;
+	position: absolute;
+	z-index: 1000;
+}
+.uma01ani {
+	right: -12%;
+    bottom: 23%;
+    animation: first_hourse 10s 1s ease-in infinite;
+}
+
+@keyframes first_hourse {
+  0% { 
+    right: -12%;
+	bottom: 23%;
+  }
+  100% {
+    right: 100%;
+	 bottom: 5%;
+  }
+}
+
+.uma02 {
+    transform: rotate(-10deg);
+    width: 12%;
+	position: absolute;
+	z-index: 1000;
+}
+.uma02ani {
+	 animation: seco_hourse 9s 1s ease-in infinite;
+    right: -12%;
+    bottom: 15%;
+}
+@keyframes seco_hourse {
+  0% { 
+    right: -12%;
+	bottom: 15%;
+	}
+  100% {
+    right: 100%;
+	 bottom: 0%;
+  }
+}
+
+.uma03 {
+    transform: scale(-1,1);
+    width: 9%;
+    position: absolute;
+    z-index: -1;
+}
+.uma03ani {
+    left: -9%;
+    bottom: 75%;
+	animation: third_hourse 10s 1s ease-in infinite;
+}
+@keyframes third_hourse {
+  0% { 
+    left: -9%;
+	bottom: 75%;
+  }
+  100% {
+    left: 100%;
+	 bottom: 70%;
+  }
+}
+
+
+@media screen and (max-width: 900px){
+.umaanime {
+	width: 100%;
+    height: 165vw;
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    overflow-x: hidden;
+    /* z-index: 1000;*/
+}
+
+.uma01 {
+    width: 23%;
+}
+.uma01ani {
+    right: -23%;
+	bottom: 0;
+	top: -25%;
+	}
+@keyframes first_hourse {
+  0% { 
+    right: -23%;
+	top: -25%;
+  }
+  100% {
+    right: 100%;
+	 top: 5%;
+  }
+}
+	
+	
+
+.uma02 {
+    width: 23%;
+}
+.uma02ani {
+    right: -23%;
+	bottom: 0;
+	top: -15%;
+	}
+@keyframes seco_hourse {
+  0% { 
+    right: -23%;
+	top: -15%;
+	}
+  100% {
+    right: 100%;
+	 top: 15%;
+  }
+}
+	
+	
+	
+
+
+.uma03 {
+    width: 20%;
+}
+.uma03ani {
+    left: -20%;
+    top: 5%;
+
+}
+@keyframes third_hourse {
+  0% { 
+    left: -20%;
+	bottom: 75%;
+  }
+  100% {
+    left: 100%;
+	 bottom: 70%;
+  }
+}
+}
+
+
+
+
+
+/*スライドイン*/
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrap:before {
+  animation: img-wrap 1s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #f5ecd3;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-wrap {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+/*回転*/
+.round{
+  animation:90s linear infinite rotation1;
+}
+
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
+/*上下に動く*/
+.move_y {
+  animation: move-y 2s infinite alternate ease-in-out;
+  display: inline-block;
+  color: red;
+}
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+/*上下に動く2*/
+.move_y2 {
+  animation: move-y2 3s infinite alternate ease-in-out;
+  display: inline-block;
+  color: red;
+}
+@keyframes move-y2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+
+
+/*ふわふわ*/
+.fuwafuwa {
+
+-webkit-animation:fuwafuwa 3s infinite linear alternate;
+animation:fuwafuwa 3s infinite linear alternate;
+
+}
+
+
+
+@-webkit-keyframes fuwafuwa {
+0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+
+}
+
+
+
+@keyframes fuwafuwa {
+0% {transform:translate(0, 0) rotate(-5deg);}
+50% {transform:translate(0, -5px) rotate(0deg);}
+100% {transform:translate(0, 0)rotate(5deg);}
+
+}
+
+
+/*ふわふわ2*/
+.fuwafuwa2 {
+
+-webkit-animation:fuwafuwa 2s infinite linear alternate;
+animation:fuwafuwa 2s infinite linear alternate;
+
+}
+
+
+
+@-webkit-keyframes fuwafuwa2 {
+0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+
+}
+
+
+
+@keyframes fuwafuwa2 {
+0% {transform:translate(0, 0) rotate(-5deg);}
+50% {transform:translate(0, -5px) rotate(0deg);}
+100% {transform:translate(0, 0)rotate(5deg);}
+
+}
+
+
+/*ふわふわ3*/
+
+.fuwafuwa3 {
+  animation: fuwafuwa3 3s infinite ease-in-out .8s alternate;
+  transition: 1.5s ease-in-out;
+}
+
+@keyframes fuwafuwa3 {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
+
+
+
+
+/*紙吹雪*/
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
+}
+
+    .flag {
+	  width: 28%;
+      position: absolute;
+      z-index: 1000;
+      top: 3vw;
+	  left: 4vw;
+    }
+    .flag .obj_midashi {
+      width: 90%;
+      left: 3vw !important;
+      top: 0 !important;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+	  transition: 0.3s;
+    }
+    .flag_img {
+      width: 34%;
+    }
+	.flag01 {
+	width: 38%;
+    top: 4vw;
+    left: 2vw;
+		}
+	.flag02 {
+    top: 2vw;
+    left: 10vw;
+		}
+	.flag03 {
+	width: 100%;
+    top: 0vw;
+    left: 0vw;
+		}
+	.flag03 .obj_midashi {
+	width: 100%;
+    left: 3vw !important;
+    top: -1vw !important;
+		}
+
+	.flag04 {
+	width: 80%;
+	top: 11vw;
+    left: 2vw;
+	}
+	.flag04 .obj_midashi {
+	width: 95%;
+    left: 3vw !important;
+    top: -1vw !important;
+		}
+    .flag05 .flag_img {
+      width: 76%;
+    }
+	.flag05 {
+	width: 80%;
+	top: 6vw;
+    left: -2vw;
+	}
+	.flag05 .obj_midashi {
+	width: 230%;
+    left: 3vw !important;
+    top: 3vw !important;
+		}
+
+
+
+    .obj_midashi {
+      opacity: 0;
+      transition: 0.4s;
+    }
+    .popuphover {
+      transition: 0.4s;
+      opacity: 1;
+    }
+    .building {
+      transition: 0.4s;
+      transform: scale(1);
+    }
+    .scalebuilding {
+      transform: scale(1.15);
+    }
+    .scalebuilding .move_y, .scalebuilding .move_y2 {
+      animation-play-state: paused;
+    }
+
+    @media screen and (max-width: 900px) {
+	.flag {
+		width: 30%;
+		left: 3vw;
+		}
+	 .flag .obj_midashi {
+      left: 9vw !important;
+    }
+
+	.flag01 {
+	width: 50%;
+    top: 4vw;
+    left: 2vw;
+		}
+	.flag02 {
+	width: 40%;
+    top: 2vw;
+    left: 30vw;
+		}
+	.flag03 {
+	width: 100%;
+    left: -3vw;
+    top: -7vw;
+		}
+	.flag03 .obj_midashi {
+	width: 117%;
+    left: 7vw !important;
+    top: -1vw !important;
+		}
+	.flag04 {
+	width: 100%;
+    top: 13vw;
+    right: 0vw;
+		}
+	.flag_img {
+    width: 40%;
+		}
+      .popup_sp {
+        pointer-events: none;
+      }
+		
+	.flag05 {
+	width: 105%;
+    left: -8vw;
+    top: 8vw;
+		}
+	.flag05 .obj_midashi {
+	width: 180%;
+    left: 0vw !important;
+    top: 22vw !important;
+		}
+		
+    }
+
+
+
+/*/////////////////TOPページ ここまで////////////////*/
+
+
+
+
+
+
+
+
+
+/*/////////////////馬のふれあいページ ここから////////////////*/
+/*この中に記述お願い致します。*/
+
+
+/*/////////////////馬のふれあいページ ここまで////////////////*/
