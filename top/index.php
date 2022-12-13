@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+	<!-- Google Tag Manager -->
+	<?php include_once('../inc/gtm_head.php'); ?>
+	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<link rel="stylesheet" href="./css/style.css">
