@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<!-- Google Tag Manager -->
-	<?php include_once('../inc/gtm_head.php'); ?>
-	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<link rel="stylesheet" href="./css/style.css">
@@ -15,16 +12,6 @@
 	<meta property="og:url" content="https://jra-tokyo-jobacenter.com/" />
 	<meta property="og:site_name" content="JRA -Tokyo Racecourse Horse Park-" />
 	<meta property="og:image" content="https://jra-tokyo-jobacenter.com/img/main_visual.jpg" />
-  
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PVZ9RTR1N"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'G-9PVZ9RTR1N');
-	</script>
 </head>
 
 	

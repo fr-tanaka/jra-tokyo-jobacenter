@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<!-- Google Tag Manager -->
-	<?php include_once('./inc/gtm_head.php'); ?>
-	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<link rel="stylesheet" href="./css/topstyle.css">
@@ -25,16 +22,7 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PVZ9RTR1N"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'G-9PVZ9RTR1N');
-	</script>
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PVZ9RTR1N"></script>
 	<script>
@@ -46,11 +34,9 @@
 	</script>
 </head>
 
-<body class="top">
-	<!-- Google Tag Manager (noscript) -->
-	<?php include_once('./inc/gtm_body.php'); ?>
-	<!-- End Google Tag Manager (noscript) -->
+	
 
+<body class="top">
 		<!-- ローディング画面 -->
 	<div id="loading">
 		<!--<p class="loadingtxt">NOW LOADING</p>-->
