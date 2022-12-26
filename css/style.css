@@ -2226,12 +2226,36 @@ h2 {
 	width: 40%;
 	}
 
+.syonan .uma_select_img {
+	width: 55%;
+	}
+
+.siren .uma_select_img {
+	width: 58%;
+	}
+
+.mexicana .uma_select_img {
+	width: 57%;
+	}
+
+.umaya_middle {
+	width: 67.2%;
+	}
+
 .umaya_small {
 	width: 47%;
 	}
 
+.profile_select_block_middle ul {
+	width: 54%;
+	}
+
 .profile_select_block_small ul {
 	width: 35%;
+	}
+
+.profile_select_block_middle li {
+	width: 28.75%;
 	}
 
 .profile_select_block_small li {
@@ -2554,7 +2578,45 @@ h2 {
 .fantasuteiko .uma_body {
 	width: 45%;
 	}
-	
+
+.muito .copy {
+	width: 12.5%;
+	transform: translateX(45%);
+}
+
+.muito .uma_body {
+	width: 25.3%;
+}
+
+.syonan .copy {
+	width: 16.15%;
+}
+
+.syonan .uma_body {
+	width: 17.65%;
+}
+
+.siren .copy {
+	width: 10.8%;
+	transform: translate(38%, 198%);
+}
+
+.siren .uma_body {
+	width: 30.05%;
+}
+
+.acrobat .copy {
+	width: 17.5%;
+}
+
+.acrobat .uma_body {
+	width: 16.5%;
+}
+
+.mexicana .uma_body {
+	width: 23.5%;
+}
+
 
 @media screen and (max-width: 767px){
 .profile h3 {
@@ -2734,6 +2796,44 @@ h2 {
 	
 .biuruke .uma_body {
     width: 75%;
+	}
+
+.muito .copy {
+		width: 26.5%;
+		transform: translateX(45%);
+	}
+	
+.muito .uma_body {
+		width: 43.3%;
+	}
+	
+.syonan .copy {
+		width: 32.15%;
+	}
+	
+.syonan .uma_body {
+    width: 37.65%;
+	}
+	
+.siren .copy {
+		width: 19.8%;
+		transform: translate(38%, 198%);
+	}
+	
+.siren .uma_body {
+    width: 58.05%;
+	}
+	
+.acrobat .copy {
+    width: 40.5%;
+	}
+	
+.acrobat .uma_body {
+		width: 33.5%;
+	}
+	
+.mexicana .uma_body {
+    width: 46.5%;
 	}
 	
 .biuruke .profile_sub-content02 li {
